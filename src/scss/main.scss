@@ -1,0 +1,139 @@
+// navbar
+
+.search-div {
+    width: 50%;
+}
+
+a {
+    padding: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: gray;
+        text-decoration: none;
+    }
+}
+
+// temperature
+
+#weather-details {
+    background-color: white;
+    height: 100%;
+    padding: 5rem 3rem 2rem 3rem;
+}
+
+#weather-details {
+    h1 {
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+.weather-details-container {
+    padding: 2rem 0;
+
+    &__temperature {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &__gif {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .weather-details-container__other-details {
+        .row {
+            .col-2 {
+                margin: 0 1.1rem;
+
+                i {
+                    font-size: 1.5rem;
+                    padding-bottom: 0.5rem;
+                }
+
+                h6 {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+
+    .weather-details-container__other-details {
+        .row {
+            .col-2 {
+                margin: 0 1.5rem;
+
+                i {
+                    font-size: 1.5rem;
+                    padding-bottom: 0.5rem;
+                }
+
+                h6 {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 377px) and (max-width: 426px) {
+
+    .weather-details-container__other-details {
+        .row {
+            .col-2 {
+                margin: 0 1.6rem;
+
+                i {
+                    font-size: 1.5rem;
+                    padding-bottom: 0.5rem;
+                }
+
+                h6 {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .weather-details-container__gif {
+        padding-bottom: 2rem;
+    }
+
+    .weather-details-container__temperature {
+        padding-bottom: 2rem;
+    }
+
+    .weather-details-container__other-details {
+        .row {
+            .col-2 {
+                i {
+                    font-size: 1.5rem;
+                    padding-bottom: 0.5rem;
+                }
+
+                h6 {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
